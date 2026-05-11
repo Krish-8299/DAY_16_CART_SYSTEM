@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Krish<span>Cart</span>
+        </div>
+
+        <a href="index.html" class="home-btn">
+            <i class="ri-home-4-line"></i>
+            Home
+        </a>
+
+    </nav>
+
+
+    <section class="cart-page">
+
+        <div class="cart-left">
+
+            <h2>Your Shopping Cart</h2>
+
+            <div id="cartItems"></div>
+
+        </div>
+
+
+
+        <div class="summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-box">
+
+                <p>
+                    Total Items :
+                    <span id="totalItems">0</span>
+                </p>
+
+                <p>
+                    Delivery :
+                    <span>₹0</span>
+                </p>
+
+                <p>
+                    Discount :
+                    <span>₹0</span>
+                </p>
+
+                <hr>
+
+                <h3>
+                    Grand Total :
+                    <span id="grandTotal">₹0</span>
+                </h3>
+
+                <button onclick="checkout()">
+                    Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <i class="ri-checkbox-circle-fill"></i>
+
+            <h2>Order Successful</h2>
+
+            <p>
+                Thanks for shopping with Krish E-commerce Cart 🚀
+            </p>
+
+            <button onclick="closePopup()">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

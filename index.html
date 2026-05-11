@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>Krish</span>
+        </div>
+
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Collections</li>
+            <li>Trending</li>
+        </ul>
+
+        <div class="nav-icons">
+
+            <div class="search-box">
+                <i class="ri-search-line"></i>
+                <input type="text" id="searchInput" placeholder="Search Product">
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+
+                <i class="ri-shopping-bag-3-line"></i>
+
+                <span id="cart-count">0</span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                FUTURE <br>
+                SHOPPING
+            </h1>
+
+            <p>
+                Premium modern products with futuristic shopping experience.
+            </p>
+
+            <button>
+                Explore Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="products-section">
+
+        <div class="title-area">
+
+            <h2>Featured Products</h2>
+
+            <p>Modern collections for modern people</p>
+
+        </div>
+
+        <div class="products" id="products"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
